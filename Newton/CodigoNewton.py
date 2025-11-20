@@ -1,4 +1,4 @@
-mport sympy as sp
+import sympy as sp
 
 print("===== MÉTODO DE NEWTON–RAPHSON =====")
 
