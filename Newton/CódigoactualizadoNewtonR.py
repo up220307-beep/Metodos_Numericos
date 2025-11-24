@@ -1,14 +1,13 @@
 import sympy as sp
 
-print("===== MÉTODO DE NEWTON =====")
+print("===== MÉTODO DE NEWTON–RAPHSON =====")
 
 func_str = input("Ingresa tu función f(x): ")
 f = sp.sympify(func_str)
-
-df = sp.diff(f, 'x')
-
-print("\nLa derivada calculada automáticamente es:")
-print("f'(x) =", df)
+derivada = input("Ingresa la función derivada f(x): ")
+df = sp.sympify(func_str)
+ 
+#df = sp.diff(f, 'x') 
 
 f_num = sp.lambdify(sp.symbols('x'), f)
 df_num = sp.lambdify(sp.symbols('x'), df)
